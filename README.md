@@ -19,3 +19,17 @@ v20.7.0
 ```
 > npm install -g appium
 ```
+6. Start Appium
+```
+C:\Users\singh>appium
+[Appium] Welcome to Appium v2.12.1
+[Appium] The autodetected Appium home path: C:\Users\singh\.appium
+[Appium] Appium REST http interface listener started on http://0.0.0.0:4723
+[Appium] You can provide the following URLs in your client code to connect to this server:
+        http://192.168.56.1:4723/
+        http://192.168.1.18:4723/
+        http://127.0.0.1:4723/ (only accessible from the same host)
+        http://172.23.144.1:4723/
+[Appium] No drivers have been installed in C:\Users\singh\.appium. Use the "appium driver" command to install the one(s) you want to use.
+[Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+```
