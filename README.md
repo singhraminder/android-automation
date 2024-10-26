@@ -4,7 +4,31 @@ android app functional automation using appium
 1. Installed new Android-Studio LadyBug (2024.2.1) on 26.Oct.2024
 2. Within Android Studio Settings > Settings > Build Tool > Gradle is not pointed to wrapper but points to local installation / distribution (GRADLE_HOME) and JDK is pointed to JDK_HOME
 3. Installed new gradle version > 8.10.2 and make sure GRADLE_HOME is point to C:\sw.1\gradle-8.10.2 as well in Advanced Settings > env variables i.e. PATH also points to %GRADLE_HOME%\bin
-4. Check node and npm versions
+4. Check Gradle version
+```
+C:\Users\singh>gradle -v
+Welcome to Gradle 8.10.2!
+
+Here are the highlights of this release:
+ - Support for Java 23
+ - Faster configuration cache
+ - Better configuration cache reports
+
+For more details see https://docs.gradle.org/8.10.2/release-notes.html
+------------------------------------------------------------
+Gradle 8.10.2
+------------------------------------------------------------
+Build time:    2024-09-23 21:28:39 UTC
+Revision:      415adb9e06a516c44b391edff552fd42139443f7
+
+Kotlin:        1.9.24
+Groovy:        3.0.22
+Ant:           Apache Ant(TM) version 1.10.14 compiled on August 16 2023
+Launcher JVM:  21 (Amazon.com Inc. 21+35-LTS)
+Daemon JVM:    C:\sw.1\corretto-jdk21 (no JDK specified, using current Java home)
+OS:            Windows 11 10.0 amd64
+```
+5. Check node and npm versions
 ```
 > node -v
 v20.7.0
@@ -15,11 +39,11 @@ v20.7.0
 > npm -v
 10.9.0
 ```
-5. Install appium
+6. Install appium
 ```
 > npm install -g appium
 ```
-6. Start Appium
+7. Start Appium
 ```
 C:\Users\singh>appium
 [Appium] Welcome to Appium v2.12.1
@@ -33,7 +57,7 @@ C:\Users\singh>appium
 [Appium] No drivers have been installed in C:\Users\singh\.appium. Use the "appium driver" command to install the one(s) you want to use.
 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
 ```
-7. Check drivers
+8. Check drivers
 ```
 C:\Users\singh>appium driver list
 ✔ Listing available drivers
@@ -46,7 +70,7 @@ C:\Users\singh>appium driver list
 - gecko [not installed]
 - chromium [not installed]
 ```
-8. Install 3 drivers > uiautomator2, windows and chromium
+9. Install 3 drivers > uiautomator2, windows and chromium
 ```
 C:\Users\singh>appium driver install uiautomator2
 ✔ Checking if 'appium-uiautomator2-driver' is compatible
@@ -69,7 +93,7 @@ C:\Users\singh>appium driver install chromium
 - automationName: Chromium
 - platformNames: ["Windows","mac","macOS","Linux"]
 ```
-9. Install plugins > images
+10. Install plugins > images
 ```
 C:\Users\singh>appium
 [Appium] Welcome to Appium v2.12.1
