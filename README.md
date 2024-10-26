@@ -10,6 +10,10 @@ android app functional automation using appium
 v20.7.0
 > npm -v
 10.1.0
+//upgrade npm
+> npm install -g npm@10.9.0
+> npm -v
+10.9.0
 ```
 5. Install appium
 ```
