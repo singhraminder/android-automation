@@ -69,3 +69,40 @@ C:\Users\singh>appium driver install chromium
 - automationName: Chromium
 - platformNames: ["Windows","mac","macOS","Linux"]
 ```
+9. Install plugins > images
+```
+C:\Users\singh>appium
+[Appium] Welcome to Appium v2.12.1
+[Appium] The autodetected Appium home path: C:\Users\singh\.appium
+[Appium] Attempting to load driver uiautomator2...
+[Appium] Attempting to load driver windows...
+[Appium] Attempting to load driver chromium...
+[Appium] Requiring driver at C:\Users\singh\.appium\node_modules\appium-windows-driver\build\index.js
+[Appium] Requiring driver at C:\Users\singh\.appium\node_modules\appium-chromium-driver\index.js
+[Appium] Requiring driver at C:\Users\singh\.appium\node_modules\appium-uiautomator2-driver\build\index.js
+[Appium] WindowsDriver has been successfully loaded in 3.604s
+[Appium] ChromiumDriver has been successfully loaded in 3.604s
+[Appium] AndroidUiautomator2Driver has been successfully loaded in 3.605s
+[HTTP] Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[Appium] Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[Appium] Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at doListen (node:net:2069:7)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+C:\Users\singh>appium plugin
+Error: ✖ Cannot handle plugin command undefined
+
+C:\Users\singh>appium plugin list
+✔ Listing available plugins
+- images [not installed]
+- execute-driver [not installed]
+- relaxed-caps [not installed]
+- universal-xml [not installed]
+
+C:\Users\singh>appium plugin install images
+✔ Checking if '@appium/images-plugin' is compatible
+✔ Installing 'images' using NPM install spec '@appium/images-plugin'
+ℹ Plugin images@3.0.21 successfully installed
+```
