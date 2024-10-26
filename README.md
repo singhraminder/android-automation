@@ -47,4 +47,25 @@ C:\Users\singh>appium driver list
 - chromium [not installed]
 ```
 8. Install 3 drivers > uiautomator2, windows and chromium
-9. 
+```
+C:\Users\singh>appium driver install uiautomator2
+✔ Checking if 'appium-uiautomator2-driver' is compatible
+✔ Installing 'uiautomator2' using NPM install spec 'appium-uiautomator2-driver'
+ℹ Driver uiautomator2@3.8.0 successfully installed
+- automationName: UiAutomator2
+- platformNames: ["Android"]
+
+C:\Users\singh>appium driver install windows
+✔ Checking if 'appium-windows-driver' is compatible
+✔ Installing 'windows' using NPM install spec 'appium-windows-driver'
+ℹ Driver windows@3.0.2 successfully installed
+- automationName: Windows
+- platformNames: ["Windows"]
+
+C:\Users\singh>appium driver install chromium
+✔ Checking if 'appium-chromium-driver' is compatible
+✔ Installing 'chromium' using NPM install spec 'appium-chromium-driver'
+ℹ Driver chromium@1.4.4 successfully installed
+- automationName: Chromium
+- platformNames: ["Windows","mac","macOS","Linux"]
+```
