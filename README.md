@@ -33,3 +33,18 @@ C:\Users\singh>appium
 [Appium] No drivers have been installed in C:\Users\singh\.appium. Use the "appium driver" command to install the one(s) you want to use.
 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
 ```
+7. Check drivers
+```
+C:\Users\singh>appium driver list
+✔ Listing available drivers
+- uiautomator2 [not installed]
+- xcuitest [not installed]
+- espresso [not installed]
+- mac2 [not installed]
+- windows [not installed]
+- safari [not installed]
+- gecko [not installed]
+- chromium [not installed]
+```
+8. Install 3 drivers > uiautomator2, windows and chromium
+9. 
